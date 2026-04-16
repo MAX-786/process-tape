@@ -1,15 +1,9 @@
   [
     {
-      "date": "2026-04-17",
+      "date": "2026-04-14",
       "project": "portfolio",
-      "text": "Scrapped the trailing cursor shadow. Looked clever in isolation but felt like lag in practice. Subtlety beats gimmick every time.",
-      "tags": ["UX", "cursor"]
-    },
-    {
-      "date": "2026-04-16",
-      "project": "portfolio",
-      "text": "Moved briefing cache from in-memory Map to Redis. The Map worked fine in dev but serverless functions don't share memory across invocations. Every cold start was a cache miss.",
-      "tags": ["infra", "Redis"]
+      "text": "Replaced the Typewriter component with a decode-style TextScramble. Characters resolve left to right through random chars. Feels like the terminal is thinking, not just typing.",
+      "tags": ["animation", "Framer Motion"]
     },
     {
       "date": "2026-04-15",
@@ -18,9 +12,15 @@
       "tags": ["UX", "animation"]
     },
     {
-      "date": "2026-04-14",
+      "date": "2026-04-16",
       "project": "portfolio",
-      "text": "Replaced the Typewriter component with a decode-style TextScramble. Characters resolve left to right through random chars. Feels like the terminal is thinking, not just typing.",
-      "tags": ["animation", "Framer Motion"]
+      "text": "Moved briefing cache from in-memory Map to Redis. The Map worked fine in dev but serverless functions don't share memory across invocations. Every cold start was a cache miss.",
+      "tags": ["infra", "Redis"]
+    },
+    {
+      "date": "2026-04-17",
+      "project": "portfolio",
+      "text": "Scrapped the trailing cursor shadow. Looked clever in isolation but felt like lag in practice. Subtlety beats gimmick every time.",
+      "tags": ["UX", "cursor"]
     }
   ]
