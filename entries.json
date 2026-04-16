@@ -1,0 +1,9 @@
+[
+  {
+            "date": "2026-04-17",
+            "project": "portfolio",
+            "text": "Scrapped the trailing cursor shadow. Looked clever in isolation but felt like lag in practice. Subtlety beats gimmick every time.",
+            "tags": ["UX", "cursor"]
+  }
+
+]
