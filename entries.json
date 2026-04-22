@@ -1,5 +1,11 @@
   [
     {
+      "date": "2026-04-22",
+      "project": "key-mapper-windows",
+      "text": "created a script to use mouse+keyboard as xbox controller to play as player 2, i already had one xbox controller and i wanted to play with keyboard",
+      "tags": ["keymapper", "ViGEmBus"]
+    },
+    {
       "date": "2026-04-14",
       "project": "portfolio",
       "text": "Replaced the Typewriter component with a decode-style TextScramble. Characters resolve left to right through random chars. Feels like the terminal is thinking, not just typing.",
