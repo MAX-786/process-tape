@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-05-11T23:31:47Z",
-  "total_entries": 5,
-  "total_days": 5,
+  "generated_at": "2026-05-12T12:11:06Z",
+  "total_entries": 6,
+  "total_days": 6,
   "projects": [
+    {
+      "name": "LinkedIn Draft",
+      "entry_count": 1,
+      "last_active": "2026-05-12",
+      "tags": [
+        "OAuth2",
+        "approved",
+        "automation",
+        "draft",
+        "linkedin"
+      ]
+    },
     {
       "name": "key-mapper-windows",
       "entry_count": 1,
@@ -28,19 +40,25 @@
   ],
   "all_tags": [
     "Framer Motion",
+    "OAuth2",
     "Redis",
     "UX",
     "ViGEmBus",
     "animation",
+    "approved",
+    "automation",
     "cursor",
+    "draft",
     "infra",
-    "keymapper"
+    "keymapper",
+    "linkedin"
   ],
   "date_range": {
     "first": "2026-04-14",
-    "last": "2026-04-22"
+    "last": "2026-05-12"
   },
   "days": [
+    "2026-05-12",
     "2026-04-22",
     "2026-04-17",
     "2026-04-16",
