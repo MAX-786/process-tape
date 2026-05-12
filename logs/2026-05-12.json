@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T23:30:49Z",
+  "entry_ids": [],
+  "projects_touched": ["process-tape", "linkedin-agent", "portfolio"],
+  "summary": "A heavily productive day spanning three projects. The morning focused on LinkedIn automation — a full linkedin-agent project was scaffolded with a remote Playwright browser architecture, and a LinkedIn profile gap audit was completed from resume data after LinkedIn blocked direct scraping. The afternoon was dominated by a major refactor: the process-tape data pipeline and portfolio website were both overhauled to use dated daily log files (logs/YYYY-MM-DD.json) as the source of truth instead of the old entries.json, with infinite scroll and Redis-cached pagination added to the portfolio's /process-tape page.",
+  "highlights": [
+    "Built linkedin-agent project at ~/linkedin-agent/ with auth.py, scraper.py, feed.py, poster.py, and cli.py modules",
+    "Designed remote Playwright browser architecture: local Windows machine runs playwright server, OCI connects via WebSocket tunnel — avoids disk/headless browser constraints on server",
+    "Disk cleanup on OCI: freed ~2.5GB from pip cache, uv cache, systemd journal logs, and dnf cache",
+    "Completed LinkedIn Profile Gap Audit (headline, About section, missing cloud keywords, undersold open-source credentials, weak AI positioning) using resume as ground truth after LinkedIn error 999 blocked scraping",
+    "Approved and committed LinkedIn Draft B (xurl/OAuth2 headless bug story) to process-tape repo as entry-20260512-001",
+    "Deleted entries.json from process-tape repo — logs/YYYY-MM-DD.json is now the sole source of truth",
+    "Rewrote scripts/build_meta.py to walk logs/*.json files and aggregate projects, tags, and dates into meta.json",
+    "Rewrote portfolio API route /api/process-tape with Redis caching (meta: 1hr TTL, individual logs: 24hr TTL) and pagination (?page=N&limit=K, default 10, max 20)",
+    "Upgraded ProcessTapeClient.tsx with IntersectionObserver infinite scroll (sentinel div, 200px rootMargin), animated loading dots, end-of-tape marker, and DAYS/LATEST/SHOWN stats bar",
+    "Updated portfolio README to document Process Tape section and API route parameters",
+    "Updated cron job prompt to remove stale entries.json references and reflect new logs/ architecture",
+    "Both process-tape and portfolio repos committed and pushed to GitHub (process-tape: commits 4260bfe + d86186a; portfolio: commits f49e439 + 807ffd2)"
+  ],
+  "tags": ["linkedin-automation", "linkedin-agent", "playwright", "remote-browser", "process-tape-refactor", "portfolio", "infinite-scroll", "oauth2", "disk-cleanup", "pagination", "redis-caching", "nextjs", "profile-audit", "build-in-public"]
+}
