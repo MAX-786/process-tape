@@ -10,34 +10,19 @@ Not polished. Not a portfolio. Just the tape playing.
 
 ```
 process-tape/
-├── entries.json          # manual dev log entries
-├── meta.json             # auto-generated index (projects, tags, dates, counts)
 ├── logs/
-│   └── YYYY-MM-DD.json  # daily auto-summaries written by cron
+│   └── YYYY-MM-DD.json  # daily auto-summaries written by cron (source of truth)
+├── meta.json             # auto-generated index (projects, tags, dates, counts)
 ├── scripts/
-│   └── build_meta.py    # regenerates meta.json from entries.json
+│   └── build_meta.py    # regenerates meta.json from logs/
 └── SCHEMA.md             # full data spec
 ```
 
----
-
-## Entry format
-
-Each entry in `entries.json` is one atomic thought, change, or decision:
-
-```json
-{
-  "id": "entry-YYYYMMDD-001",
-  "date": "YYYY-MM-DD",
-  "project": "project-slug",
-  "text": "what happened, in plain language",
-  "tags": ["tag1", "tag2"]
-}
-```
+> `entries.json` has been removed. `logs/` is the single source of truth.
 
 ---
 
-## Daily logs
+## Daily log format
 
 Every night at ~5 AM IST, a cron job scans the day's work and writes a structured summary to `logs/YYYY-MM-DD.json`:
 
@@ -45,8 +30,8 @@ Every night at ~5 AM IST, a cron job scans the day's work and writes a structure
 {
   "date": "YYYY-MM-DD",
   "generated_at": "...",
-  "projects_touched": ["project-a"],
-  "summary": "What the day was about.",
+  "projects_touched": ["project-a", "project-b"],
+  "summary": "What the day was about, in plain language.",
   "highlights": ["thing done", "decision made"],
   "tags": ["tag1", "tag2"]
 }
@@ -56,24 +41,28 @@ Every night at ~5 AM IST, a cron job scans the day's work and writes a structure
 
 ## Fetching data (for a frontend)
 
-All files are static JSON — no backend needed. Fetch directly from raw GitHub:
+All files are static JSON — no backend needed.
 
 ```
-https://raw.githubusercontent.com/MAX-786/process-tape/main/entries.json
+# Index (start here — contains the full ordered list of dates)
 https://raw.githubusercontent.com/MAX-786/process-tape/main/meta.json
+
+# Individual day log
 https://raw.githubusercontent.com/MAX-786/process-tape/main/logs/YYYY-MM-DD.json
 ```
 
-Use `meta.json` for fast index data (projects, tags, date range) without parsing all entries.
+`meta.json` contains a `days` array (newest-first) you can use to paginate over log files without listing the directory.
 
 ---
 
 ## Regenerating meta
 
-After editing `entries.json` manually, run:
+After new logs are added or to rebuild from scratch:
 
 ```bash
 python scripts/build_meta.py
 ```
+
+This walks all `logs/*.json` files and regenerates `meta.json` with aggregated project stats, tag lists, and date ranges.
 
 See [SCHEMA.md](./SCHEMA.md) for the full data spec.
