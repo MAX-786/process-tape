@@ -1,68 +1,100 @@
 {
-  "generated_at": "2026-05-12T12:11:06Z",
-  "total_entries": 6,
-  "total_days": 6,
+  "generated_at": "2026-05-12T17:42:09Z",
+  "total_entries": 2,
+  "total_days": 2,
   "projects": [
     {
-      "name": "LinkedIn Draft",
+      "name": "job-hunt-automation",
       "entry_count": 1,
-      "last_active": "2026-05-12",
+      "last_active": "2026-05-11",
       "tags": [
-        "OAuth2",
-        "approved",
+        "HITL",
+        "agentic-ai",
         "automation",
-        "draft",
-        "linkedin"
-      ]
-    },
-    {
-      "name": "key-mapper-windows",
-      "entry_count": 1,
-      "last_active": "2026-04-22",
-      "tags": [
-        "ViGEmBus",
-        "keymapper"
+        "cold-email",
+        "cron",
+        "hunter-io",
+        "job-hunt-automation",
+        "portfolio",
+        "tech-trends",
+        "x-api",
+        "xurl"
       ]
     },
     {
       "name": "portfolio",
-      "entry_count": 4,
-      "last_active": "2026-04-17",
+      "entry_count": 1,
+      "last_active": "2026-05-11",
       "tags": [
-        "Framer Motion",
-        "Redis",
-        "UX",
-        "animation",
-        "cursor",
-        "infra"
+        "HITL",
+        "agentic-ai",
+        "automation",
+        "cold-email",
+        "cron",
+        "hunter-io",
+        "job-hunt-automation",
+        "portfolio",
+        "tech-trends",
+        "x-api",
+        "xurl"
+      ]
+    },
+    {
+      "name": "resume-review",
+      "entry_count": 1,
+      "last_active": "2026-05-10",
+      "tags": [
+        "ai-capabilities",
+        "automation",
+        "career",
+        "cron",
+        "job-search",
+        "process-tape",
+        "resume",
+        "user-assistance"
+      ]
+    },
+    {
+      "name": "ai-capabilities-exploration",
+      "entry_count": 1,
+      "last_active": "2026-05-10",
+      "tags": [
+        "ai-capabilities",
+        "automation",
+        "career",
+        "cron",
+        "job-search",
+        "process-tape",
+        "resume",
+        "user-assistance"
       ]
     }
   ],
   "all_tags": [
-    "Framer Motion",
-    "OAuth2",
-    "Redis",
-    "UX",
-    "ViGEmBus",
-    "animation",
-    "approved",
+    "HITL",
+    "agentic-ai",
+    "ai-capabilities",
     "automation",
-    "cursor",
-    "draft",
-    "infra",
-    "keymapper",
-    "linkedin"
+    "career",
+    "cold-email",
+    "cron",
+    "hunter-io",
+    "job-hunt-automation",
+    "job-search",
+    "portfolio",
+    "process-tape",
+    "resume",
+    "tech-trends",
+    "user-assistance",
+    "x-api",
+    "xurl"
   ],
   "date_range": {
-    "first": "2026-04-14",
-    "last": "2026-05-12"
+    "first": "2026-05-10",
+    "last": "2026-05-11"
   },
   "days": [
-    "2026-05-12",
-    "2026-04-22",
-    "2026-04-17",
-    "2026-04-16",
-    "2026-04-15",
-    "2026-04-14"
+    "2026-05-11",
+    "2026-05-10"
   ]
 }

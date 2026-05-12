@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 build_meta.py
-Regenerates meta.json from entries.json.
-Run after manually editing entries.json.
+Regenerates meta.json from logs/ folder (YYYY-MM-DD.json files).
+Run after new logs are added, or manually to rebuild.
 """
 
 import json
@@ -11,40 +11,56 @@ from datetime import datetime, timezone
 from collections import defaultdict
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ENTRIES_FILE = os.path.join(REPO, "entries.json")
+LOGS_DIR = os.path.join(REPO, "logs")
 META_FILE = os.path.join(REPO, "meta.json")
 
 
 def build_meta():
-    with open(ENTRIES_FILE) as f:
-        entries = json.load(f)
-
-    if not entries:
-        print("No entries found.")
+    if not os.path.isdir(LOGS_DIR):
+        print("No logs/ directory found.")
         return
 
-    # Collect per-project data
+    log_files = sorted(
+        [f for f in os.listdir(LOGS_DIR) if f.endswith(".json")],
+        reverse=True,  # newest first
+    )
+
+    if not log_files:
+        print("No log files found in logs/.")
+        return
+
+    # Collect per-project data across all daily logs
     projects = defaultdict(lambda: {"entry_count": 0, "last_active": "", "tags": set()})
     all_tags = set()
-    all_dates = set()
+    all_dates = []
 
-    for entry in entries:
-        date = entry["date"]
-        project = entry["project"]
-        tags = entry.get("tags", [])
+    for filename in log_files:
+        filepath = os.path.join(LOGS_DIR, filename)
+        try:
+            with open(filepath) as f:
+                log = json.load(f)
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"Skipping {filename}: {e}")
+            continue
 
-        projects[project]["entry_count"] += 1
-        if date > projects[project]["last_active"]:
-            projects[project]["last_active"] = date
-        projects[project]["tags"].update(tags)
+        date = log.get("date", filename.replace(".json", ""))
+        tags = log.get("tags", [])
+        touched = log.get("projects_touched", [])
+
+        all_dates.append(date)
         all_tags.update(tags)
-        all_dates.add(date)
+
+        for project in touched:
+            projects[project]["entry_count"] += 1
+            if date > projects[project]["last_active"]:
+                projects[project]["last_active"] = date
+            projects[project]["tags"].update(tags)
 
     sorted_dates = sorted(all_dates, reverse=True)
 
     meta = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "total_entries": len(entries),
+        "total_entries": len(all_dates),
         "total_days": len(all_dates),
         "projects": sorted(
             [
@@ -61,17 +77,21 @@ def build_meta():
         ),
         "all_tags": sorted(all_tags),
         "date_range": {
-            "first": sorted_dates[-1],
-            "last": sorted_dates[0],
+            "first": sorted_dates[-1] if sorted_dates else "",
+            "last": sorted_dates[0] if sorted_dates else "",
         },
-        "days": sorted_dates,
+        "days": sorted_dates,  # newest-first — API uses this for pagination
     }
 
     with open(META_FILE, "w") as f:
         json.dump(meta, f, indent=2)
         f.write("\n")
 
-    print(f"meta.json updated: {len(entries)} entries, {len(all_dates)} days, {len(projects)} projects")
+    print(
+        f"meta.json updated: {len(all_dates)} days, "
+        f"{len(projects)} projects, "
+        f"{len(all_tags)} tags"
+    )
 
 
 if __name__ == "__main__":
