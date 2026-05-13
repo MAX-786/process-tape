@@ -2,17 +2,13 @@
   "date": "2026-05-11",
   "generated_at": "2026-05-11T23:30:28Z",
   "entry_ids": [],
-  "projects_touched": ["job-hunt-automation", "portfolio"],
-  "summary": "The day was dominated by job hunt automation work: investigating and ultimately abandoning xurl (X/Twitter CLI) due to a known headless OAuth2 bug and the X API free tier being write-only with no search capability. The Hunter.io cold email pipeline was built end-to-end — including HITL confirmation, email discovery, draft generation, and tracker status updates. A separate tech trends research report was produced covering AI, hardware, robotics, quantum, and cybersecurity domains.",
+  "projects_touched": ["job-hunt-automation"],
+  "summary": "Built the Hunter.io cold email pipeline end-to-end with HITL confirmation.",
   "highlights": [
-    "Investigated xurl OAuth2 on headless Linux — confirmed broken upstream (PKCE flow requires browser redirect); decided to skip xurl entirely since X API free tier has no search anyway",
-    "Removed incomplete job-hunt-app xurl registration and cleaned up ~/.xurl",
-    "Built cold-email-outreach cron (ID: [REDACTED]) using Hunter.io API: reads tracker.md, finds verified emails, drafts tailored cold emails, delivers via Telegram",
-    "Implemented HITL flow: agent must confirm company/domain/role before spending Hunter.io API credits",
-    "Fixed bug where script ignored company argument and auto-picked wrong lead; rewrote to use a request file pattern",
-    "Tested pipeline successfully on MixRank and Enveritas; tracker status auto-updates (New → Researching) and pushes to GitHub",
-    "Portfolio project (mkhismkh.com — Next.js 16, Tailwind v4, Framer Motion) added to job-hunt cron context for design-eng applications",
-    "Produced tech trends report covering: agentic AI going mainstream, NVIDIA Blackwell/Rubin roadmap, AI coding assistants (30–55% productivity gains), humanoid robot factory deployments, post-quantum cryptography migration, and AI-vs-AI cybersecurity arms race"
+    "Built cold-email-outreach cron using Hunter.io API: reads tracker.md, discovers verified emails, drafts tailored cold emails, delivers via Telegram",
+    "Implemented HITL request-file pattern to confirm company/domain/role before spending API credits",
+    "Fixed bug where script ignored the company argument and auto-picked the wrong lead",
+    "Dropped xurl — confirmed OAuth2 PKCE flow broken on headless Linux and X API free tier has no search anyway"
   ],
-  "tags": ["job-hunt-automation", "cold-email", "hunter-io", "xurl", "x-api", "HITL", "tech-trends", "agentic-ai", "portfolio", "cron", "automation"]
+  "tags": ["job-hunt-automation", "cold-email", "hunter-io", "HITL", "cron"]
 }

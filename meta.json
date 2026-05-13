@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:32:22Z",
+  "generated_at": "2026-05-13T06:11:14Z",
   "total_entries": 3,
   "total_days": 3,
   "projects": [
@@ -8,19 +8,12 @@
       "entry_count": 1,
       "last_active": "2026-05-12",
       "tags": [
-        "build-in-public",
-        "disk-cleanup",
         "infinite-scroll",
         "linkedin-agent",
-        "linkedin-automation",
-        "nextjs",
-        "oauth2",
         "pagination",
         "playwright",
         "portfolio",
         "process-tape-refactor",
-        "profile-audit",
-        "redis-caching",
         "remote-browser"
       ]
     },
@@ -29,133 +22,63 @@
       "entry_count": 1,
       "last_active": "2026-05-12",
       "tags": [
-        "build-in-public",
-        "disk-cleanup",
         "infinite-scroll",
         "linkedin-agent",
-        "linkedin-automation",
-        "nextjs",
-        "oauth2",
         "pagination",
         "playwright",
         "portfolio",
         "process-tape-refactor",
-        "profile-audit",
-        "redis-caching",
         "remote-browser"
       ]
     },
     {
       "name": "portfolio",
-      "entry_count": 2,
+      "entry_count": 1,
       "last_active": "2026-05-12",
       "tags": [
-        "HITL",
-        "agentic-ai",
-        "automation",
-        "build-in-public",
-        "cold-email",
-        "cron",
-        "disk-cleanup",
-        "hunter-io",
         "infinite-scroll",
-        "job-hunt-automation",
         "linkedin-agent",
-        "linkedin-automation",
-        "nextjs",
-        "oauth2",
         "pagination",
         "playwright",
         "portfolio",
         "process-tape-refactor",
-        "profile-audit",
-        "redis-caching",
-        "remote-browser",
-        "tech-trends",
-        "x-api",
-        "xurl"
+        "remote-browser"
       ]
     },
     {
       "name": "job-hunt-automation",
-      "entry_count": 1,
+      "entry_count": 2,
       "last_active": "2026-05-11",
       "tags": [
         "HITL",
-        "agentic-ai",
         "automation",
+        "career",
         "cold-email",
         "cron",
         "hunter-io",
         "job-hunt-automation",
-        "portfolio",
-        "tech-trends",
-        "x-api",
-        "xurl"
-      ]
-    },
-    {
-      "name": "resume-review",
-      "entry_count": 1,
-      "last_active": "2026-05-10",
-      "tags": [
-        "ai-capabilities",
-        "automation",
-        "career",
-        "cron",
         "job-search",
-        "process-tape",
-        "resume",
-        "user-assistance"
-      ]
-    },
-    {
-      "name": "ai-capabilities-exploration",
-      "entry_count": 1,
-      "last_active": "2026-05-10",
-      "tags": [
-        "ai-capabilities",
-        "automation",
-        "career",
-        "cron",
-        "job-search",
-        "process-tape",
-        "resume",
-        "user-assistance"
+        "resume"
       ]
     }
   ],
   "all_tags": [
     "HITL",
-    "agentic-ai",
-    "ai-capabilities",
     "automation",
-    "build-in-public",
     "career",
     "cold-email",
     "cron",
-    "disk-cleanup",
     "hunter-io",
     "infinite-scroll",
     "job-hunt-automation",
     "job-search",
     "linkedin-agent",
-    "linkedin-automation",
-    "nextjs",
-    "oauth2",
     "pagination",
     "playwright",
     "portfolio",
-    "process-tape",
     "process-tape-refactor",
-    "profile-audit",
-    "redis-caching",
     "remote-browser",
-    "resume",
-    "tech-trends",
-    "user-assistance",
-    "x-api",
-    "xurl"
+    "resume"
   ],
   "date_range": {
     "first": "2026-05-10",
