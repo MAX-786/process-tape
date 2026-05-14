@@ -1,8 +1,38 @@
 {
-  "generated_at": "2026-05-14T07:22:27Z",
-  "total_entries": 4,
-  "total_days": 4,
+  "generated_at": "2026-05-14T23:31:51Z",
+  "total_entries": 5,
+  "total_days": 5,
   "projects": [
+    {
+      "name": "tech-briefing-pipeline",
+      "entry_count": 1,
+      "last_active": "2026-05-14",
+      "tags": [
+        "automation",
+        "blogwatcher",
+        "cron",
+        "news-pipeline",
+        "rss",
+        "security",
+        "supply-chain",
+        "telegram"
+      ]
+    },
+    {
+      "name": "blogwatcher-cli",
+      "entry_count": 1,
+      "last_active": "2026-05-14",
+      "tags": [
+        "automation",
+        "blogwatcher",
+        "cron",
+        "news-pipeline",
+        "rss",
+        "security",
+        "supply-chain",
+        "telegram"
+      ]
+    },
     {
       "name": "hermes-agent",
       "entry_count": 1,
@@ -78,6 +108,7 @@
     "automation",
     "aws",
     "bedrock-bug",
+    "blogwatcher",
     "career",
     "cold-email",
     "cron",
@@ -88,18 +119,24 @@
     "job-hunt-automation",
     "job-search",
     "linkedin-agent",
+    "news-pipeline",
     "pagination",
     "playwright",
     "portfolio",
     "process-tape-refactor",
     "remote-browser",
-    "resume"
+    "resume",
+    "rss",
+    "security",
+    "supply-chain",
+    "telegram"
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-13"
+    "last": "2026-05-14"
   },
   "days": [
+    "2026-05-14",
     "2026-05-13",
     "2026-05-12",
     "2026-05-11",

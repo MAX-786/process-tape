@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-14",
+  "generated_at": "2026-05-14T23:30:39Z",
+  "entry_ids": ["20260514_205058_ede262ea", "cron_b97e486aa669_20260514_212242"],
+  "projects_touched": ["tech-briefing-pipeline", "blogwatcher-cli"],
+  "summary": "Built and deployed an automated daily tech news briefing pipeline. Set up blogwatcher-cli v0.2.0 with 23 RSS feeds across security, JS/React, AI/ML, and OSS categories; wired a Python fetch script and cron job to deliver a curated Telegram briefing at 8AM IST. First automated run fired same evening, surfacing the TanStack 'Mini Shai Hulud' supply chain attack as the day's signal item.",
+  "highlights": [
+    "Installed blogwatcher-cli v0.2.0 to /usr/local/bin; registered 23 RSS feeds across security, JS, AI, and OSS categories",
+    "Wrote ~/.hermes/scripts/tech-news-fetch.py as the fetch/summarize script for the briefing",
+    "Configured cron job (30 2 * * * UTC = 8AM IST) to deliver curated Telegram briefing; 16/18 feeds confirmed working after URL debugging",
+    "First automated briefing ran successfully; flagged TanStack npm supply chain attack (social-engineering, attacker gained npm publish rights ~May 10-11, no malicious publish occurred) as top signal"
+  ],
+  "tags": ["automation", "rss", "cron", "telegram", "security", "supply-chain", "blogwatcher", "news-pipeline"]
+}
