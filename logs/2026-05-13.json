@@ -2,14 +2,10 @@
   "date": "2026-05-13",
   "generated_at": "2026-05-13T23:30:47Z",
   "entry_ids": [],
-  "projects_touched": ["job-hunt", "cold-email-outreach"],
-  "summary": "Full job-application day: weekly leads cron dropped 3 leads (Revieve, SerpApi, one other), Revieve was applied to with portal + cold email outreach in the afternoon, and SerpApi was applied to via direct email + full cold email pipeline in the evening. A Bedrock Haiku IAM bug was hit and worked around during the SerpApi cold email editing step.",
+  "projects_touched": ["hermes-agent"],
+  "summary": "Diagnosed and worked around a Bedrock Haiku IAM access failure in a cold email tooling script.",
   "highlights": [
-    "Applied to Revieve Product Engineer (TypeScript/React/Node.js/AWS) via portal; cold email pipeline triggered to revieve.com contacts via Hunter.io",
-    "Applied to SerpApi Junior Fullstack Engineer via direct email to careers@serpapi.com with cover letter tailored around TypeScript/React stack and honest Rails gap acknowledgement",
-    "Ran cold email outreach to 10 SerpApi contacts (CEO, VP Eng, 3x Eng Directors, etc.) — drafts manually edited to replace Ozgaar with volto-hydra GSoC project",
-    "Diagnosed Bedrock Haiku access failure in cold_email_editor.py (IAM user lacks model subscription); workaround: direct file edits; SKILL.md updated with caveat",
-    "job-hunt tracker.md and applied/applications.md updated and pushed for both Revieve and SerpApi; SerpApi status set to Applied"
+    "Diagnosed Bedrock Haiku access failure (IAM user lacks model subscription); workaround via direct file edits; SKILL.md updated with caveat"
   ],
-  "tags": ["job-search", "cold-email", "hunter-io", "bedrock-bug", "iam", "job-hunt-automation", "revieve", "serpapi", "cover-letter", "gsoc"]
+  "tags": ["bedrock-bug", "iam", "aws", "debug"]
 }

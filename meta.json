@@ -1,40 +1,17 @@
 {
-  "generated_at": "2026-05-13T23:32:51Z",
+  "generated_at": "2026-05-14T07:22:27Z",
   "total_entries": 4,
   "total_days": 4,
   "projects": [
     {
-      "name": "job-hunt",
+      "name": "hermes-agent",
       "entry_count": 1,
       "last_active": "2026-05-13",
       "tags": [
+        "aws",
         "bedrock-bug",
-        "cold-email",
-        "cover-letter",
-        "gsoc",
-        "hunter-io",
-        "iam",
-        "job-hunt-automation",
-        "job-search",
-        "revieve",
-        "serpapi"
-      ]
-    },
-    {
-      "name": "cold-email-outreach",
-      "entry_count": 1,
-      "last_active": "2026-05-13",
-      "tags": [
-        "bedrock-bug",
-        "cold-email",
-        "cover-letter",
-        "gsoc",
-        "hunter-io",
-        "iam",
-        "job-hunt-automation",
-        "job-search",
-        "revieve",
-        "serpapi"
+        "debug",
+        "iam"
       ]
     },
     {
@@ -99,12 +76,12 @@
   "all_tags": [
     "HITL",
     "automation",
+    "aws",
     "bedrock-bug",
     "career",
     "cold-email",
-    "cover-letter",
     "cron",
-    "gsoc",
+    "debug",
     "hunter-io",
     "iam",
     "infinite-scroll",
@@ -116,9 +93,7 @@
     "portfolio",
     "process-tape-refactor",
     "remote-browser",
-    "resume",
-    "revieve",
-    "serpapi"
+    "resume"
   ],
   "date_range": {
     "first": "2026-05-10",
