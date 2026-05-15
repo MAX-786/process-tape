@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-15",
+  "generated_at": "2026-05-15T23:31:02Z",
+  "entry_ids": [
+    "20260515_155759_40afe5"
+  ],
+  "projects_touched": [
+    "daily-tech-brief",
+    "daily-tech-brief-app",
+    "linkedin-posts",
+    "portfolio",
+    "process-tape"
+  ],
+  "summary": "Filesystem reorganization: moved repos that had accumulated directly in ~ into ~/repos/ (which maps to /mnt/repos_drive/projects/), then created backward-compat symlinks at the original ~ paths for existing cron jobs and skills.",
+  "highlights": [
+    "Moved 6 git repos from ~ to ~/repos/ (physical: /mnt/repos_drive/projects/); created ~/repo-name symlinks pointing back for backward compat with existing crons/skills",
+    "Established hard rule: all new repos go in ~/repos/ (personal) or ~/repos/work/ (work), never directly in ~; ~ symlinks to be pruned as scripts are updated"
+  ],
+  "tags": ["infra", "filesystem", "symlinks", "repo-organization"]
+}

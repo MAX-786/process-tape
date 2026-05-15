@@ -1,8 +1,77 @@
 {
-  "generated_at": "2026-05-14T23:31:51Z",
-  "total_entries": 5,
-  "total_days": 5,
+  "generated_at": "2026-05-15T23:32:27Z",
+  "total_entries": 6,
+  "total_days": 6,
   "projects": [
+    {
+      "name": "daily-tech-brief",
+      "entry_count": 1,
+      "last_active": "2026-05-15",
+      "tags": [
+        "filesystem",
+        "infra",
+        "repo-organization",
+        "symlinks"
+      ]
+    },
+    {
+      "name": "daily-tech-brief-app",
+      "entry_count": 1,
+      "last_active": "2026-05-15",
+      "tags": [
+        "filesystem",
+        "infra",
+        "repo-organization",
+        "symlinks"
+      ]
+    },
+    {
+      "name": "linkedin-posts",
+      "entry_count": 1,
+      "last_active": "2026-05-15",
+      "tags": [
+        "filesystem",
+        "infra",
+        "repo-organization",
+        "symlinks"
+      ]
+    },
+    {
+      "name": "portfolio",
+      "entry_count": 2,
+      "last_active": "2026-05-15",
+      "tags": [
+        "filesystem",
+        "infinite-scroll",
+        "infra",
+        "linkedin-agent",
+        "pagination",
+        "playwright",
+        "portfolio",
+        "process-tape-refactor",
+        "remote-browser",
+        "repo-organization",
+        "symlinks"
+      ]
+    },
+    {
+      "name": "process-tape",
+      "entry_count": 2,
+      "last_active": "2026-05-15",
+      "tags": [
+        "filesystem",
+        "infinite-scroll",
+        "infra",
+        "linkedin-agent",
+        "pagination",
+        "playwright",
+        "portfolio",
+        "process-tape-refactor",
+        "remote-browser",
+        "repo-organization",
+        "symlinks"
+      ]
+    },
     {
       "name": "tech-briefing-pipeline",
       "entry_count": 1,
@@ -45,35 +114,7 @@
       ]
     },
     {
-      "name": "process-tape",
-      "entry_count": 1,
-      "last_active": "2026-05-12",
-      "tags": [
-        "infinite-scroll",
-        "linkedin-agent",
-        "pagination",
-        "playwright",
-        "portfolio",
-        "process-tape-refactor",
-        "remote-browser"
-      ]
-    },
-    {
       "name": "linkedin-agent",
-      "entry_count": 1,
-      "last_active": "2026-05-12",
-      "tags": [
-        "infinite-scroll",
-        "linkedin-agent",
-        "pagination",
-        "playwright",
-        "portfolio",
-        "process-tape-refactor",
-        "remote-browser"
-      ]
-    },
-    {
-      "name": "portfolio",
       "entry_count": 1,
       "last_active": "2026-05-12",
       "tags": [
@@ -113,9 +154,11 @@
     "cold-email",
     "cron",
     "debug",
+    "filesystem",
     "hunter-io",
     "iam",
     "infinite-scroll",
+    "infra",
     "job-hunt-automation",
     "job-search",
     "linkedin-agent",
@@ -125,17 +168,20 @@
     "portfolio",
     "process-tape-refactor",
     "remote-browser",
+    "repo-organization",
     "resume",
     "rss",
     "security",
     "supply-chain",
+    "symlinks",
     "telegram"
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-14"
+    "last": "2026-05-15"
   },
   "days": [
+    "2026-05-15",
     "2026-05-14",
     "2026-05-13",
     "2026-05-12",
