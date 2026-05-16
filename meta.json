@@ -1,21 +1,50 @@
 {
-  "generated_at": "2026-05-15T23:32:27Z",
-  "total_entries": 6,
-  "total_days": 6,
+  "generated_at": "2026-05-16T23:33:40Z",
+  "total_entries": 7,
+  "total_days": 7,
   "projects": [
     {
-      "name": "daily-tech-brief",
+      "name": "jlpt-agent",
       "entry_count": 1,
-      "last_active": "2026-05-15",
+      "last_active": "2026-05-16",
       "tags": [
-        "filesystem",
-        "infra",
-        "repo-organization",
-        "symlinks"
+        "batch-processing",
+        "cron",
+        "hermes-skill",
+        "japanese",
+        "jlpt",
+        "llms.txt",
+        "next.js",
+        "security",
+        "seo",
+        "spaced-repetition",
+        "telegram"
       ]
     },
     {
       "name": "daily-tech-brief-app",
+      "entry_count": 2,
+      "last_active": "2026-05-16",
+      "tags": [
+        "batch-processing",
+        "cron",
+        "filesystem",
+        "hermes-skill",
+        "infra",
+        "japanese",
+        "jlpt",
+        "llms.txt",
+        "next.js",
+        "repo-organization",
+        "security",
+        "seo",
+        "spaced-repetition",
+        "symlinks",
+        "telegram"
+      ]
+    },
+    {
+      "name": "daily-tech-brief",
       "entry_count": 1,
       "last_active": "2026-05-15",
       "tags": [
@@ -148,6 +177,7 @@
     "HITL",
     "automation",
     "aws",
+    "batch-processing",
     "bedrock-bug",
     "blogwatcher",
     "career",
@@ -155,14 +185,19 @@
     "cron",
     "debug",
     "filesystem",
+    "hermes-skill",
     "hunter-io",
     "iam",
     "infinite-scroll",
     "infra",
+    "japanese",
+    "jlpt",
     "job-hunt-automation",
     "job-search",
     "linkedin-agent",
+    "llms.txt",
     "news-pipeline",
+    "next.js",
     "pagination",
     "playwright",
     "portfolio",
@@ -172,15 +207,18 @@
     "resume",
     "rss",
     "security",
+    "seo",
+    "spaced-repetition",
     "supply-chain",
     "symlinks",
     "telegram"
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-15"
+    "last": "2026-05-16"
   },
   "days": [
+    "2026-05-16",
     "2026-05-15",
     "2026-05-14",
     "2026-05-13",

@@ -1,0 +1,25 @@
+{
+  "date": "2026-05-16",
+  "generated_at": "2026-05-16T23:30:53Z",
+  "entry_ids": [
+    "20260516_002430_3df01c",
+    "20260516_171141_c8a246",
+    "20260516_180741_15a6a2",
+    "20260516_182351_efb6c8",
+    "20260516_190025_a68d73",
+    "20260516_190316_c5e489",
+    "20260516_215412_bd9955"
+  ],
+  "projects_touched": [
+    "jlpt-agent",
+    "daily-tech-brief-app"
+  ],
+  "summary": "Built the full jlpt-agent system from scratch: GitHub repo scaffolded, SM-2 SRS engine, complete pipeline script, jlpt-tutor Hermes skill installed, and cron registered for daily 8 AM IST Telegram lessons. Also enriched 1215-word JLPT N5/N4 vocab bank via batch LLM calls with resume capability. Separately, added SEO/crawling infrastructure to the daily-tech-brief-app and ran a security audit with three fixes.",
+  "highlights": [
+    "Built jlpt-agent end-to-end: GitHub repo, word_bank.json (100 N5 words), grammar_bank.json (30 N5 patterns), SM-2 srs.py, full pipeline script (build_prompt → hermes chat → parse → update state → Telegram), cron job at 02:30 UTC, jlpt-tutor skill installed",
+    "Wrote batch enrichment pipeline (enrich_batch.py + run_enrich_batches.sh) to fill 1215-entry JLPT vocab bank via hermes chat with resume support via enrich_progress.json",
+    "Added robots.txt (all crawlers allowed including AI bots), llms.txt (llmstxt.org spec), and sitemap.ts to daily-tech-brief-app; committed as 405a5a0",
+    "Security audit on daily-tech-brief-app: added HTTP security headers + strict CSP in next.config.ts, removed rehype-raw XSS risk, added date-slug regex validation before GitHub raw URL fetch; committed as 13c1931"
+  ],
+  "tags": ["jlpt", "japanese", "spaced-repetition", "telegram", "cron", "hermes-skill", "seo", "llms.txt", "security", "next.js", "batch-processing"]
+}
