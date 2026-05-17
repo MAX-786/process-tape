@@ -1,0 +1,15 @@
+{
+  "date": "2026-05-17",
+  "generated_at": "2026-05-17T23:30:40Z",
+  "entry_ids": ["20260517_193852_7e0548"],
+  "projects_touched": ["jlpt-agent"],
+  "summary": "Major JLPT pipeline overhaul: migrated from flat 100-word N5 vocab list to full Minna no Nihongo (MNN) Shokyu I curriculum. Fixed day-counter inflation bug for unanswered lessons and updated the jlpt-tutor skill to match the new pipeline architecture. Began N4 content assessment — MNN Shokyu II PDF identified as image-only, requiring OCR before extraction.",
+  "highlights": [
+    "Built extract_mnn.py to parse 25 MNN Shokyu I lessons from PDF → mnn_content.json (619 words); produced word_bank.json (594 words, lesson-tagged), grammar_bank.json (46 patterns), mnn_tracker.json curriculum engine, mnn_lesson_selector.py, and update_mnn_tracker.py",
+    "Fixed unanswered-lesson guard in jlpt_pipeline.sh: detects when lesson was sent but never answered (last_session_date ≠ yesterday), re-generates same lesson with same word IDs without incrementing progress.day",
+    "Updated jlpt-tutor skill: syncs mnn_tracker.json, reads gate/tier2 state, archives session with mnn_lesson/session_type/gate_result fields, explicitly gates progress.day increment to pipeline only",
+    "Resolved git conflict that wiped new scripts during a pull-during-push race: reinstalled pymupdf, regenerated all data files from scratch, force-pushed (commit df76e6c)",
+    "Assessed MNN Shokyu II PDF for N4 expansion: confirmed fully image-based (Images2PDF), verified vocabulary page format via vision_analyze — OCR extraction path required before pipeline append"
+  ],
+  "tags": ["jlpt", "japanese", "mnn", "curriculum-migration", "srs", "pipeline", "ocr", "bug-fix"]
+}

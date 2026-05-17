@@ -1,23 +1,29 @@
 {
-  "generated_at": "2026-05-16T23:33:40Z",
-  "total_entries": 7,
-  "total_days": 7,
+  "generated_at": "2026-05-17T23:32:15Z",
+  "total_entries": 8,
+  "total_days": 8,
   "projects": [
     {
       "name": "jlpt-agent",
-      "entry_count": 1,
-      "last_active": "2026-05-16",
+      "entry_count": 2,
+      "last_active": "2026-05-17",
       "tags": [
         "batch-processing",
+        "bug-fix",
         "cron",
+        "curriculum-migration",
         "hermes-skill",
         "japanese",
         "jlpt",
         "llms.txt",
+        "mnn",
         "next.js",
+        "ocr",
+        "pipeline",
         "security",
         "seo",
         "spaced-repetition",
+        "srs",
         "telegram"
       ]
     },
@@ -180,9 +186,11 @@
     "batch-processing",
     "bedrock-bug",
     "blogwatcher",
+    "bug-fix",
     "career",
     "cold-email",
     "cron",
+    "curriculum-migration",
     "debug",
     "filesystem",
     "hermes-skill",
@@ -196,9 +204,12 @@
     "job-search",
     "linkedin-agent",
     "llms.txt",
+    "mnn",
     "news-pipeline",
     "next.js",
+    "ocr",
     "pagination",
+    "pipeline",
     "playwright",
     "portfolio",
     "process-tape-refactor",
@@ -209,15 +220,17 @@
     "security",
     "seo",
     "spaced-repetition",
+    "srs",
     "supply-chain",
     "symlinks",
     "telegram"
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-16"
+    "last": "2026-05-17"
   },
   "days": [
+    "2026-05-17",
     "2026-05-16",
     "2026-05-15",
     "2026-05-14",
