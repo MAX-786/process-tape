@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-17T23:32:15Z",
-  "total_entries": 8,
-  "total_days": 8,
+  "generated_at": "2026-05-18T23:32:51Z",
+  "total_entries": 9,
+  "total_days": 9,
   "projects": [
     {
       "name": "jlpt-agent",
-      "entry_count": 2,
-      "last_active": "2026-05-17",
+      "entry_count": 3,
+      "last_active": "2026-05-18",
       "tags": [
         "batch-processing",
         "bug-fix",
@@ -15,7 +15,9 @@
         "hermes-skill",
         "japanese",
         "jlpt",
+        "lesson-history",
         "llms.txt",
+        "markdown",
         "mnn",
         "next.js",
         "ocr",
@@ -202,8 +204,10 @@
     "jlpt",
     "job-hunt-automation",
     "job-search",
+    "lesson-history",
     "linkedin-agent",
     "llms.txt",
+    "markdown",
     "mnn",
     "news-pipeline",
     "next.js",
@@ -227,9 +231,10 @@
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-17"
+    "last": "2026-05-18"
   },
   "days": [
+    "2026-05-18",
     "2026-05-17",
     "2026-05-16",
     "2026-05-15",

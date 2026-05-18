@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T23:30:52Z",
+  "entry_ids": ["20260518_113921_d437d4", "20260518_211743_c344d34f"],
+  "projects_touched": ["jlpt-agent"],
+  "summary": "Extended jlpt-agent pipeline with markdown-based lesson history storage in the repo. The JLPT N5 tutor ran live via Telegram with the learner completing practice.",
+  "highlights": [
+    "Added markdown lesson history storage to jlpt-agent repo and cron pipeline — persists each delivered lesson as a structured markdown file for review and audit"
+  ],
+  "tags": ["jlpt", "japanese", "pipeline", "lesson-history", "markdown", "cron"]
+}
