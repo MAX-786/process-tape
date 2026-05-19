@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T23:31:00Z",
+  "entry_ids": [
+    "20260519_075105_504907d2",
+    "20260519_144313_deeef6"
+  ],
+  "projects_touched": ["jlpt-agent"],
+  "summary": "Two sessions of JLPT pipeline work. Morning: debugged a cron failure caused by wrong GitHub path (`contents/state.json` instead of `contents/data/state.json`), ran the pipeline manually, and scored Day 1 quiz at 100%. Afternoon: deep architecture audit, deleted 9 stale files, created `score_session.py` to replace AI-choreographed post-scoring steps with a single atomic script.",
+  "highlights": [
+    "Fixed cron failure in jlpt_pipeline.sh: was fetching `contents/state.json` (repo root, deleted) instead of `contents/data/state.json` — caused gh 404 on every run since cleanup commit",
+    "Scored Day 1 quiz: 8/8 = 100%; pushed srs_cards.json, mnn_tracker.json, state.json, sessions/day_001.json to GitHub",
+    "Deleted 9 stale files from jlpt-agent: mnn_content.json, state_local.json, word_bank_original_100.json.bak, generate_word_bank.py, send_telegram.py, enrich_batch.py, run_enrich_batches.sh, init_srs.sh, root state.json — committed as bfe132f",
+    "Created scripts/score_session.py (~20KB): atomic script that handles SRS update, tracker advance, state update, session archive, history write, and GitHub push in one call — eliminates AI from 6 deterministic post-scoring steps",
+    "Added guard to score_session.py: skips session archive push if day_NNN.json already exists on GitHub (no overwrite) — committed as 5afd0c1",
+    "Architecture clarified: pipeline never calls score_session.py; jlpt-tutor skill is sole caller after quiz scoring"
+  ],
+  "tags": ["jlpt", "cron-debug", "pipeline-fix", "score-session", "repo-cleanup", "srs", "MNN", "determinism"]
+}
