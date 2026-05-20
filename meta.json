@@ -1,23 +1,25 @@
 {
-  "generated_at": "2026-05-19T23:36:44Z",
-  "total_entries": 10,
-  "total_days": 10,
+  "generated_at": "2026-05-20T23:39:21Z",
+  "total_entries": 11,
+  "total_days": 11,
   "projects": [
     {
       "name": "jlpt-agent",
-      "entry_count": 4,
-      "last_active": "2026-05-19",
+      "entry_count": 5,
+      "last_active": "2026-05-20",
       "tags": [
         "MNN",
         "batch-processing",
         "bug-fix",
         "cron",
         "cron-debug",
+        "cron-run",
         "curriculum-migration",
         "determinism",
         "hermes-skill",
         "japanese",
         "jlpt",
+        "lesson-delivery",
         "lesson-history",
         "llms.txt",
         "markdown",
@@ -200,6 +202,7 @@
     "cold-email",
     "cron",
     "cron-debug",
+    "cron-run",
     "curriculum-migration",
     "debug",
     "determinism",
@@ -213,6 +216,7 @@
     "jlpt",
     "job-hunt-automation",
     "job-search",
+    "lesson-delivery",
     "lesson-history",
     "linkedin-agent",
     "llms.txt",
@@ -243,9 +247,10 @@
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-19"
+    "last": "2026-05-20"
   },
   "days": [
+    "2026-05-20",
     "2026-05-19",
     "2026-05-18",
     "2026-05-17",

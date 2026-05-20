@@ -1,0 +1,13 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T23:31:02Z",
+  "entry_ids": [
+    "cron_2c0acd50ab3c_20260520_030051"
+  ],
+  "projects_touched": ["jlpt-agent"],
+  "summary": "Only the JLPT daily lesson cron ran today. After the pipeline debugging and atomic score_session.py work done on May 19, Day 3 was delivered cleanly at 03:12 UTC — first confirmed clean run in the MNN curriculum series.",
+  "highlights": [
+    "jlpt-daily-lesson cron delivered Day 3 at 03:12 UTC: 4 new MNN Lesson 1 words (大学/daigaku, 病院/byouin, いいえ/iie, アメリカ/Amerika) + grammar review of は〜ですか / じゃ ありません, 5-word SRS review set — validates the May 18-19 pipeline fixes"
+  ],
+  "tags": ["jlpt", "cron-run", "MNN", "lesson-delivery", "srs"]
+}
