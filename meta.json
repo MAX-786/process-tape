@@ -1,14 +1,15 @@
 {
-  "generated_at": "2026-05-20T23:39:21Z",
-  "total_entries": 11,
-  "total_days": 11,
+  "generated_at": "2026-05-21T23:32:47Z",
+  "total_entries": 12,
+  "total_days": 12,
   "projects": [
     {
       "name": "jlpt-agent",
-      "entry_count": 5,
-      "last_active": "2026-05-20",
+      "entry_count": 6,
+      "last_active": "2026-05-21",
       "tags": [
         "MNN",
+        "automation",
         "batch-processing",
         "bug-fix",
         "cron",
@@ -19,6 +20,7 @@
         "hermes-skill",
         "japanese",
         "jlpt",
+        "jlpt-agent",
         "lesson-delivery",
         "lesson-history",
         "llms.txt",
@@ -28,6 +30,7 @@
         "ocr",
         "pipeline",
         "pipeline-fix",
+        "repeat-lesson",
         "repo-cleanup",
         "score-session",
         "security",
@@ -214,6 +217,7 @@
     "infra",
     "japanese",
     "jlpt",
+    "jlpt-agent",
     "job-hunt-automation",
     "job-search",
     "lesson-delivery",
@@ -232,6 +236,7 @@
     "portfolio",
     "process-tape-refactor",
     "remote-browser",
+    "repeat-lesson",
     "repo-cleanup",
     "repo-organization",
     "resume",
@@ -247,9 +252,10 @@
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-20"
+    "last": "2026-05-21"
   },
   "days": [
+    "2026-05-21",
     "2026-05-20",
     "2026-05-19",
     "2026-05-18",

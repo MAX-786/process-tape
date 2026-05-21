@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-21T23:30:36Z",
+  "entry_ids": [],
+  "projects_touched": ["jlpt-agent"],
+  "summary": "JLPT daily lesson pipeline ran at 03:24 UTC, triggered the repeat-unanswered-lesson guard (Day 3 quiz still unscored), and re-delivered the Day 3 lesson to Telegram. No Day 4 advancement occurred.",
+  "highlights": [
+    "jlpt-pipeline repeated Day 3 lesson on May 21 run — unanswered-quiz guard working correctly in production post-May-17 fix"
+  ],
+  "tags": ["jlpt-agent", "cron", "repeat-lesson", "srs", "automation"]
+}
