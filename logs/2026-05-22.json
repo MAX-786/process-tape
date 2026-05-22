@@ -1,0 +1,16 @@
+{
+  "date": "2026-05-22",
+  "generated_at": "2026-05-22T23:32:44Z",
+  "entry_ids": [
+    "cron_2c0acd50ab3c_20260522_030011",
+    "cron_76b1d4a2c9aa_20260522_023005",
+    "20260522_031627_a1a286"
+  ],
+  "projects_touched": ["jlpt-agent", "linkedin-agent"],
+  "summary": "JLPT Day 4 delivered after Day 3 repeated twice due to unanswered quiz guard. LinkedIn post pipeline ran its bi-weekly cycle and generated two draft posts for Telegram approval.",
+  "highlights": [
+    "jlpt-agent: Day 4 lesson delivered successfully — pipeline advanced past the unanswered-quiz repeat guard; 4 new words (daigaku, byouin, iie, Amerika) + 〜ですか grammar; curriculum now at 2.0% N5, 12/18 MNN Lesson 1 words introduced",
+    "linkedin-agent: bi-weekly pipeline ran and generated 2 draft posts anchored to the May 19 GitHub API path bug (contents/state.json vs contents/data/state.json), sent to Telegram for HITL approval"
+  ],
+  "tags": ["jlpt", "spaced-repetition", "cron", "linkedin-agent", "automation", "mnn-lesson-1"]
+}

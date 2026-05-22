@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-21T23:32:47Z",
-  "total_entries": 12,
-  "total_days": 12,
+  "generated_at": "2026-05-22T23:33:17Z",
+  "total_entries": 13,
+  "total_days": 13,
   "projects": [
     {
       "name": "jlpt-agent",
-      "entry_count": 6,
-      "last_active": "2026-05-21",
+      "entry_count": 7,
+      "last_active": "2026-05-22",
       "tags": [
         "MNN",
         "automation",
@@ -23,9 +23,11 @@
         "jlpt-agent",
         "lesson-delivery",
         "lesson-history",
+        "linkedin-agent",
         "llms.txt",
         "markdown",
         "mnn",
+        "mnn-lesson-1",
         "next.js",
         "ocr",
         "pipeline",
@@ -38,6 +40,25 @@
         "spaced-repetition",
         "srs",
         "telegram"
+      ]
+    },
+    {
+      "name": "linkedin-agent",
+      "entry_count": 2,
+      "last_active": "2026-05-22",
+      "tags": [
+        "automation",
+        "cron",
+        "infinite-scroll",
+        "jlpt",
+        "linkedin-agent",
+        "mnn-lesson-1",
+        "pagination",
+        "playwright",
+        "portfolio",
+        "process-tape-refactor",
+        "remote-browser",
+        "spaced-repetition"
       ]
     },
     {
@@ -162,20 +183,6 @@
       ]
     },
     {
-      "name": "linkedin-agent",
-      "entry_count": 1,
-      "last_active": "2026-05-12",
-      "tags": [
-        "infinite-scroll",
-        "linkedin-agent",
-        "pagination",
-        "playwright",
-        "portfolio",
-        "process-tape-refactor",
-        "remote-browser"
-      ]
-    },
-    {
       "name": "job-hunt-automation",
       "entry_count": 2,
       "last_active": "2026-05-11",
@@ -226,6 +233,7 @@
     "llms.txt",
     "markdown",
     "mnn",
+    "mnn-lesson-1",
     "news-pipeline",
     "next.js",
     "ocr",
@@ -252,9 +260,10 @@
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-21"
+    "last": "2026-05-22"
   },
   "days": [
+    "2026-05-22",
     "2026-05-21",
     "2026-05-20",
     "2026-05-19",
