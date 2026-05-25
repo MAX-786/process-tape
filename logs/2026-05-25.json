@@ -1,0 +1,17 @@
+{
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T23:30:28Z",
+  "entry_ids": ["20260525_182459_4035e4"],
+  "projects_touched": ["hisab"],
+  "summary": "Full Docker + CI/CD deployment pipeline set up for the hisab Express/TypeScript backend. Repo cloned, Dockerized with a multi-stage build, GitHub Actions workflow wired to auto-redeploy on backend changes, Nginx configured with Cloudflare-only access and CORS locked to the Vercel frontend. Several bugs encountered and fixed along the way.",
+  "highlights": [
+    "Wrote multi-stage Dockerfile for hisab backend (builder: tsc compile, runner: prod deps only, non-root appuser, healthcheck); deployed via docker-compose bound to 127.0.0.1:4000",
+    "Built GitHub Actions workflow: build/push multi-arch image to GHCR on backend/** changes, then SSH deploy with health-check loop; secrets provisioned via gh CLI",
+    "Installed Nginx vhost for hisab-api.mkhismkh.com with Cloudflare-only IP allowlist, CORS restricted to hisab.mkhismkh.com, and security headers",
+    "Fixed Dockerfile: SQL migration files under src/db/migrations/ not copied by tsc — added explicit COPY step",
+    "Fixed /api/health returning 401 because it was behind auth middleware — moved to public routes",
+    "Fixed CI/CD multi-arch build failure: GitHub runners are amd64, OCI server is ARM64 — added linux/amd64,linux/arm64 platform targets to build step",
+    "Resolved Supabase DB connectivity: direct host resolves IPv6-only (OCI has no global IPv6); switched to Supabase connection pooler URL"
+  ],
+  "tags": ["docker", "ci-cd", "github-actions", "nginx", "express", "typescript", "ghcr", "multi-arch", "supabase", "deployment"]
+}

@@ -1,8 +1,25 @@
 {
-  "generated_at": "2026-05-22T23:33:17Z",
-  "total_entries": 13,
-  "total_days": 13,
+  "generated_at": "2026-05-25T23:31:26Z",
+  "total_entries": 14,
+  "total_days": 14,
   "projects": [
+    {
+      "name": "hisab",
+      "entry_count": 1,
+      "last_active": "2026-05-25",
+      "tags": [
+        "ci-cd",
+        "deployment",
+        "docker",
+        "express",
+        "ghcr",
+        "github-actions",
+        "multi-arch",
+        "nginx",
+        "supabase",
+        "typescript"
+      ]
+    },
     {
       "name": "jlpt-agent",
       "entry_count": 7,
@@ -209,14 +226,20 @@
     "blogwatcher",
     "bug-fix",
     "career",
+    "ci-cd",
     "cold-email",
     "cron",
     "cron-debug",
     "cron-run",
     "curriculum-migration",
     "debug",
+    "deployment",
     "determinism",
+    "docker",
+    "express",
     "filesystem",
+    "ghcr",
+    "github-actions",
     "hermes-skill",
     "hunter-io",
     "iam",
@@ -234,8 +257,10 @@
     "markdown",
     "mnn",
     "mnn-lesson-1",
+    "multi-arch",
     "news-pipeline",
     "next.js",
+    "nginx",
     "ocr",
     "pagination",
     "pipeline",
@@ -254,15 +279,18 @@
     "seo",
     "spaced-repetition",
     "srs",
+    "supabase",
     "supply-chain",
     "symlinks",
-    "telegram"
+    "telegram",
+    "typescript"
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-05-22"
+    "last": "2026-05-25"
   },
   "days": [
+    "2026-05-25",
     "2026-05-22",
     "2026-05-21",
     "2026-05-20",
