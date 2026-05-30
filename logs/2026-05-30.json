@@ -1,0 +1,15 @@
+{
+  "date": "2026-05-30",
+  "generated_at": "2026-05-30T23:31:01Z",
+  "entry_ids": ["20260530_222156_ae8f1b"],
+  "projects_touched": ["hisab"],
+  "summary": "Migrated hisab backend from Supabase cloud to a self-hosted Supabase instance running on hermes_drive. Docker and containerd data roots were relocated to /mnt/hermes_drive/0_DATA to free the root disk from 97% usage. All Supabase services came up healthy except Kong, which hit a Docker port-binding race condition on 8000.",
+  "highlights": [
+    "Relocated Docker + containerd data-root to hermes_drive, dropping root disk usage from 97% to ~65%",
+    "Deployed full self-hosted Supabase stack (13 images, 10/11 containers healthy) inside /mnt/hermes_drive/0_DATA/supabase/",
+    "Applied security overlay (docker-compose.hisab.yml): all ports bound to 127.0.0.1, all services on hisab-network, backend connects directly to supabase-db bypassing Kong/supavisor",
+    "Updated hisab backend docker-compose, db/pool.ts (ssl: false for internal network), .env, and CI/CD pipeline to target self-hosted Postgres",
+    "Created backup.sh, restore.sh, and migrate_from_cloud.sh utility scripts for the self-hosted Supabase data directory"
+  ],
+  "tags": ["supabase", "self-hosting", "docker", "infrastructure", "postgres", "hisab", "devops", "disk-management"]
+}
