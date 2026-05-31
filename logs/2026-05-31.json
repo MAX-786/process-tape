@@ -1,0 +1,13 @@
+{
+  "date": "2026-05-31",
+  "generated_at": "2026-05-31T23:30:25Z",
+  "entry_ids": [],
+  "projects_touched": ["hisab"],
+  "summary": "Diagnosed and fixed host-side Supabase DB script failures caused by Docker hostname resolution, built a full reset-db script with non-interactive mode, and patched the GitHub Actions deploy workflow to handle stale container name conflicts.",
+  "highlights": [
+    "Fixed reset-numbers.ts and migrate.ts: pool was using DATABASE_URL (supabase-db Docker hostname, unreachable from host) — added pool-script.ts that prefers DATABASE_URL_HOST (127.0.0.1:5433) for scripts run outside Docker",
+    "Built reset-db.ts: full wipe (drops all 13 tables in FK-safe order → re-runs all migrations → re-seeds admin/rates/settings); supports non-interactive mode via RESET_CONFIRM and ADMIN_* env vars",
+    "Fixed deploy-backend.yml CI/CD: added docker rm -f hisab-backend before docker compose up to clear stale containers that were blocking container name reuse across deploys"
+  ],
+  "tags": ["supabase", "docker", "postgres", "ci-cd", "github-actions", "db-tooling", "hisab"]
+}
