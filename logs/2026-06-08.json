@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T23:31:05Z",
+  "entry_ids": ["20260608_170107_32e9d2"],
+  "projects_touched": ["DRIFT"],
+  "summary": "Full production deployment of DRIFT, a Node.js WebSocket multiplayer game from a GitHub repo. Dockerized with two containers (server + nginx static/proxy), wired behind host nginx with TLS, and set up with systemd for auto-start on reboot.",
+  "highlights": [
+    "Cloned MAX-786/DRIFT repo and built multi-stage Dockerfiles for server (Node.js TS) and client (Vite SPA via nginx)",
+    "docker-compose stack: drift-server on internal port 3001, drift-client on 127.0.0.1:8765 only, isolated on drift-net bridge network",
+    "Host nginx config written for drift.mkhismkh.com with TLS termination (self-signed cert for Cloudflare Full mode) and /ws proxy for WebSocket upgrade",
+    "systemd drift.service enabled — containers auto-start on reboot",
+    "Verified stack end-to-end: both containers healthy, static site serving, WS endpoint returning correct 426 upgrade response"
+  ],
+  "tags": ["docker", "websocket", "nginx", "deployment", "systemd", "cloudflare", "nodejs", "vite"]
+}
