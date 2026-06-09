@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-09",
+  "generated_at": "2026-06-09T23:30:20Z",
+  "entry_ids": ["20260608_170107_32e9d2"],
+  "projects_touched": ["DRIFT"],
+  "summary": "Extended the DRIFT deployment session by wiring Umami analytics env vars into the CI/CD pipeline so the tracking code gets baked into every future Vite build.",
+  "highlights": [
+    "Added VITE_UMAMI_URL and VITE_UMAMI_WEBSITE_ID as ARG/ENV entries in Dockerfile.client and as --build-arg flags in the GitHub Actions deploy workflow — analytics now baked at image build time, not at runtime",
+    "Pushed commit to DRIFT repo; CI triggered and deployed in ~31 seconds"
+  ],
+  "tags": ["docker", "ci-cd", "analytics", "vite", "github-actions", "umami"]
+}
