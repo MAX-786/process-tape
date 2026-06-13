@@ -1,8 +1,34 @@
 {
-  "generated_at": "2026-06-09T23:31:38Z",
-  "total_entries": 18,
-  "total_days": 18,
+  "generated_at": "2026-06-13T23:30:53Z",
+  "total_entries": 19,
+  "total_days": 19,
   "projects": [
+    {
+      "name": "hisab",
+      "entry_count": 4,
+      "last_active": "2026-06-13",
+      "tags": [
+        "ci-cd",
+        "db-tooling",
+        "deploy",
+        "deployment",
+        "devops",
+        "disk-management",
+        "docker",
+        "docker-compose",
+        "express",
+        "ghcr",
+        "github-actions",
+        "hisab",
+        "infrastructure",
+        "multi-arch",
+        "nginx",
+        "postgres",
+        "self-hosting",
+        "supabase",
+        "typescript"
+      ]
+    },
     {
       "name": "DRIFT",
       "entry_count": 2,
@@ -20,30 +46,6 @@
         "umami",
         "vite",
         "websocket"
-      ]
-    },
-    {
-      "name": "hisab",
-      "entry_count": 3,
-      "last_active": "2026-05-31",
-      "tags": [
-        "ci-cd",
-        "db-tooling",
-        "deployment",
-        "devops",
-        "disk-management",
-        "docker",
-        "express",
-        "ghcr",
-        "github-actions",
-        "hisab",
-        "infrastructure",
-        "multi-arch",
-        "nginx",
-        "postgres",
-        "self-hosting",
-        "supabase",
-        "typescript"
       ]
     },
     {
@@ -262,11 +264,13 @@
     "curriculum-migration",
     "db-tooling",
     "debug",
+    "deploy",
     "deployment",
     "determinism",
     "devops",
     "disk-management",
     "docker",
+    "docker-compose",
     "express",
     "filesystem",
     "ghcr",
@@ -327,9 +331,10 @@
   ],
   "date_range": {
     "first": "2026-05-10",
-    "last": "2026-06-09"
+    "last": "2026-06-13"
   },
   "days": [
+    "2026-06-13",
     "2026-06-09",
     "2026-06-08",
     "2026-05-31",

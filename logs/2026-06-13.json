@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-13",
+  "generated_at": "2026-06-13T23:30:17Z",
+  "entry_ids": [],
+  "projects_touched": ["hisab"],
+  "summary": "Diagnosed and fixed a CI/CD deploy failure caused by a race condition between manual docker rm -f and docker compose up -d trying to stop the same container by internal ID. Cleared the ghost container from Docker's data root and re-deployed cleanly.",
+  "highlights": [
+    "Fixed deploy-backend.yml: manual docker rm -f hisab-backend was removing the container by name, then docker compose up tried to stop the same container by its internal ID — already gone, causing 'No such container' crash; removed the redundant rm -f since compose handles its own recreation",
+    "Ghost container cleanup: deleted stale container directory from Docker data root at /mnt/hermes_drive/0_DATA/docker/containers/<id>, restarted Docker daemon to flush state, then re-ran deploy — both build and deploy jobs passed clean"
+  ],
+  "tags": ["docker", "ci-cd", "github-actions", "docker-compose", "hisab", "deploy"]
+}
